@@ -1,0 +1,50 @@
+.navbar {
+    height: 10vh;
+    width: 100vw;
+    background-color: #6ccad0;
+    border: solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.yourorder-container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: solid 2px; */
+}
+
+.yourorder-btn{
+    font-size: 24px;
+    color: white;
+    font-family: Roboto;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.logo-container {
+    height: 100%;
+    width: 140px;
+    margin: 0px;
+    p {
+        margin-block: 0 !important;
+        line-height: 1;
+        font-weight: bold;
+    }
+}
+
+.logofirstpart {
+    color: #8b61c2;
+    font-size: 32px;
+    margin: 0  !important;
+}
+
+.logosecondpart {
+    color: #ffde59;
+    font-size: 32px;
+    margin: 0 !important;
+}

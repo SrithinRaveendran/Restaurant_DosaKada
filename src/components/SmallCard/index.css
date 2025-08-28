@@ -1,0 +1,50 @@
+.smallCardcontainer{
+    height: 230px;
+    width: 300px;
+    margin: 8px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    border: solid 2px; 
+    flex-wrap: wrap;
+    p{
+        margin: 0px;
+        line-height: 1;
+    }
+}
+
+.item-image{
+    height : 70%;
+    width: 100%;
+    border-radius: 8px;
+    margin: 0px;
+}
+
+.name-price-section{
+    height: 30%;
+    width: 100;
+    /* border: solid 2px;; */
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+.name-price-container{
+    color: black;
+    font-family: Roboto;
+    p{
+      margin: 2px;
+    }
+    
+}
+
+.plus-minus-container{
+    display: flex;
+}
+
+.plus-minus-btn{
+    background-color: #ef8c71;
+    border: solid 2px;
+    border-radius: 5px;
+    margin: 2px;
+    cursor: pointer;
+}
