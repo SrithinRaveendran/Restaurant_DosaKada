@@ -71,8 +71,8 @@ const App = () => {
     <BrowserRouter>
     <SelectedProvider>
       <Routes> 
-        <Route path="/loading" element={<FrontLoadingPage />} />
-        <Route path="/" element={<Home/>}/>
+        <Route path="/" element={<FrontLoadingPage />} />
+        <Route path="/Home" element={<Home/>}/>
         <Route path='/Your-Order' element={<YourOrder/>} />
       </Routes>
       </SelectedProvider>
