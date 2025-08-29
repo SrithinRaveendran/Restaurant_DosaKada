@@ -19,8 +19,8 @@ const Navbar = () =>{
                     <p className='logosecondpart'>DOSA<span className='logofirstpart'>KADA</span></p>
                 </div>
                 <div className='yourorder-container'>
-                    <button className='yourorder-btn' onClick={onYourorderClick}>Your Order</button>
                     <button className='yourorder-btn' onClick={onHomeclick}>Home</button>
+                    <button className='yourorder-btn' onClick={onYourorderClick}>Your Order</button> 
                 </div>
             </div>
     )

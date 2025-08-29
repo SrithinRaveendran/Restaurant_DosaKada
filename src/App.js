@@ -65,8 +65,8 @@ import { SelectedProvider } from "./components/Context/selectedContext";
 //     ];
 
 const App = () => {
-  //const setMenu = useContext(SelectedContext)
-  //setMenu(Menu)
+  // const setMenu = useContext(SelectedContext)
+  // setMenu(Menu)
   return (
     <BrowserRouter>
     <SelectedProvider>
