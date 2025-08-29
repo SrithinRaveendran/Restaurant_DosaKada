@@ -7,3 +7,23 @@
     align-items: center;
     justify-content: center;
 }
+
+.logoimage{
+    height: 80%;
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+     .logoimage{
+    height: 40%;
+    width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logoimage{
+    height: 40%;
+    width: 60%;
+    }
+
+}

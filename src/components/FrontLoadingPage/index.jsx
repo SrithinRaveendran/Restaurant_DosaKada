@@ -4,7 +4,7 @@ const FrontLoadingPage = () =>{
     const navigate = useNavigate()
     return(
     <div className='loadingpageMainBackground' onClick={()=>navigate("/home")}>
-        <img src="/dosalogo.png" alt="loadingpage"/>
+        <img className='logoimage' src="/dosalogo.png" alt="loadingpage"/>
     </div>
 )}
 
