@@ -107,10 +107,15 @@ body {
 }
 
 @media (max-width: 480px) {
-    .header {
-        flex-direction: column;
-        align-items: center;
-    }
+    .navbar {
+    height: 7vh;
+    width: 100vw;
+    background-color: #6ccad0;
+    border: solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
     .yourorder-container {
         flex-direction: flex;
