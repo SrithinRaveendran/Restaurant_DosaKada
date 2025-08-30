@@ -14,7 +14,7 @@ const SmallCard = (props) => {
     )
     return (
         <div className="smallCardcontainer" >
-            <img className='item-image' src={data.image_URL} alt="items" />
+            <img className='item-image' src={data.image_URL} loading="lazy" alt="items" />
             <div className='name-price-section'>
                 <div className='name-price-container'>
                     <p>{data.name}</p>
@@ -29,10 +29,8 @@ const SmallCard = (props) => {
                         <button className='plus-minus-btn' onClick={less}>
                             <i className="fa-solid fa-minus"></i>
                         </button>
-                    </div>
-                    
-                    <p>Qty: {data.qty}</p>
-                    
+                    </div>    
+                    <p className='qty'>Qty: {data.qty}</p>
                 </div>
             </div>
         </div>

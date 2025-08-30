@@ -10,7 +10,7 @@ const Menu = [
   {
     name: "Normal Dosa",
     category: "Main-Item",
-    image_URL: "https://commons.wikimedia.org/wiki/Special:FilePath/Plain%20Dosa%20from%20North%20India.jpg",
+    image_URL: "/normal-dosa.png",
     price: 15,
     qty: 0,
     id: uuidv4()
@@ -34,7 +34,7 @@ const Menu = [
   {
     name: "Kutty Dosa 3pcs",
     category: "Main-Item",
-    image_URL: "https://upload.wikimedia.org/wikipedia/commons/a/a0/Set_Dosey.jpg",
+    image_URL: "/kutty_dosa_3pcs.png",
     price: 45,
     qty: 0,
     id: uuidv4()
@@ -42,7 +42,7 @@ const Menu = [
   {
     name: "Idli 3pcs",
     category: "Main-Item",
-    image_URL: "https://commons.wikimedia.org/wiki/Special:FilePath/Idli%20%28South%20Indian%20cuisine%29.jpg",
+    image_URL: "/Idli_3pcs.png",
     price: 25,
     qty: 0,
     id: uuidv4()
@@ -50,7 +50,7 @@ const Menu = [
   {
     name: "Red chutney (Tomato)",
     category: "Side-Dish",
-    image_URL: "https://commons.wikimedia.org/wiki/Special:FilePath/Tomato%20chutney.jpg",
+    image_URL: "/red_chutney.png",
     price: 5,
     qty: 0,
     id: uuidv4()
@@ -58,7 +58,7 @@ const Menu = [
   {
     name: "White chutney (Coconut)",
     category: "Side-Dish",
-    image_URL: "https://commons.wikimedia.org/wiki/Special:FilePath/Coconut%20Chutney.jpg",
+    image_URL: "/white-chutney.png",
     price: 5,
     qty: 0,
     id: uuidv4()
@@ -66,7 +66,7 @@ const Menu = [
   {
     name: "Medu Vada 3pcs",
     category: "Main-Item",
-    image_URL: "https://commons.wikimedia.org/wiki/Special:FilePath/Medu%20Vada%20with%20chutnies.jpg",
+    image_URL: "/Medu_Vada_3pcs.png",
     price: 20,
     qty: 0,
     id: uuidv4()
@@ -74,7 +74,7 @@ const Menu = [
   {
     name: "Vegetable Sambar (Bowl)",
     category: "Side-Dish",
-    image_URL: "https://upload.wikimedia.org/wikipedia/commons/1/1e/Sambar_Vegetables.JPG",
+    image_URL: "/Vegetable_Sambar.png",
     price: 10,
     qty: 0,
     id: uuidv4()
@@ -82,7 +82,7 @@ const Menu = [
   {
     name: "Onion Dosa",
     category: "Main-Item",
-    image_URL: "https://commons.wikimedia.org/wiki/Special:FilePath/Onion%20dosa.jpg",
+    image_URL: "/Onion_Dosa.png",
     price: 22,
     qty: 0,
     id: uuidv4()
@@ -90,7 +90,7 @@ const Menu = [
   {
     name: "Cheese Onion Dosa",
     category: "Main-Item",
-    image_URL: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Cheese_Onion_Dosa_-Home_made-Chennai%2C_Tamil_Nadu%2C_19.47.39.jpg",
+    image_URL: "/Cheese_Onion_Dosa.png",
     price: 28,
     qty: 0,
     id: uuidv4()
@@ -98,7 +98,7 @@ const Menu = [
   {
     name: "Uthappam (Veg)",
     category: "Main-Item",
-    image_URL: "https://commons.wikimedia.org/wiki/Special:FilePath/Uthappam.jpg",
+    image_URL: "/Uthappam_(Veg).png",
     price: 30,
     qty: 0,
     id: uuidv4()

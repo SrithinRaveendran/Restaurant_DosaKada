@@ -89,11 +89,13 @@
     justify-content: space-between; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0px;
     padding: 0px;
 }
-                
+.name-price-container{
+  color:black;
+}                
    /* .right-part{
     width: 25%;
     border: solid 2px;
@@ -101,7 +103,7 @@
   }  */
 
   .name-price-section {
-    font-size: 10px;
+    font-size: 8px;
     padding: 2px 6px;
   }
 
@@ -112,6 +114,10 @@
     align-items: center;
     justify-content: center;
     border: solid black;
+    border-width: 1px;
     
+  }
+  .qty{
+    font-weight: bold;
   }
 }
