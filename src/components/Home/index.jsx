@@ -1,6 +1,6 @@
 import './index.css'
 
-import { useContext,  useState } from 'react';
+import { useContext, useEffect } from 'react';
 
 
 import Navbar from '../Navbar';
@@ -10,13 +10,16 @@ import SmallCard from '../SmallCard';
 import { SelectedContext } from "../Context/selectedContext";
 
 const Home = () => {
-  const [loadingPage, setLoadingpage] = useState(true)
+
+
+
+  
+
+  const { selected, setSelected, MenuState, setMenu, originalMenu , loadingPage , setLoadingpage } = useContext(SelectedContext)
 
   const loadingPageRemove = () => (
     setLoadingpage(false)
   )
-
-  const { selected, setSelected, MenuState, setMenu, originalMenu } = useContext(SelectedContext)
 
   console.log("menustate", MenuState)
 
@@ -79,6 +82,12 @@ const Home = () => {
       setMenu(originalMenu)
     }
   }
+  
+  useEffect(() => {
+    setInterval(() => {
+      setLoadingpage(false)
+    }, 500);
+  }, [setLoadingpage])  
 
   console.log(selected)
   return (

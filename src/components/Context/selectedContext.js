@@ -171,9 +171,10 @@ export function SelectedProvider({ children }) {
     const [selected, setSelected] = useState([]);
     const [MenuState, setMenu] = useState(Menu);
     const[originalMenu] = useState(Menu)
+    const [loadingPage, setLoadingpage] = useState(true)
 
     return (
-        <SelectedContext.Provider value={{ selected, setSelected,MenuState,setMenu,originalMenu}}>
+        <SelectedContext.Provider value={{ selected, setSelected,MenuState,setMenu,originalMenu,loadingPage, setLoadingpage}}>
             {children}
         </SelectedContext.Provider>
     );
