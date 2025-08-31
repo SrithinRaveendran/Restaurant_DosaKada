@@ -1,6 +1,6 @@
 import './index.css'
 
-import { useContext, useEffect, useState } from 'react';
+import { useContext,  useState } from 'react';
 
 
 import Navbar from '../Navbar';
@@ -79,11 +79,6 @@ const Home = () => {
       setMenu(originalMenu)
     }
   }
-
-  useEffect(()=>{
-    setLoadingpage(false)
-  
-  },[])
 
   console.log(selected)
   return (
