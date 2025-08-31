@@ -11,6 +11,7 @@
         margin: 0px;
         line-height: 1;
     }
+    background-color: white;
 }
 
 .item-image{
@@ -27,13 +28,16 @@
     display: flex;
     justify-content: space-between;
     margin: 0px;
+    
 }
 
 .name-price-container{
     color: black;
     font-family: Roboto;
+    
     p{
       margin: 2px;
+      font-weight: bold;
     }
     
 }
@@ -50,6 +54,10 @@
     margin: 2px;
     cursor: pointer;
 }
+
+ .qty{
+    font-weight: bold;
+  }
 
 @media (max-width: 768px) {
   .smallCardcontainer {
@@ -74,8 +82,8 @@
 
 @media (max-width: 480px) {
   .smallCardcontainer {
-    width: 29%;
-    height: 200px;
+    width: 46%;
+    height: 215px;
     margin: 4px 0;
     padding: 0px;
     
@@ -103,12 +111,12 @@
   }  */
 
   .name-price-section {
-    font-size: 8px;
+    font-size: 12px;
     padding: 2px 6px;
   }
 
   .plus-minus-btn {
-    font-size: 6px;
+    font-size: 12px;
     padding: 1px 4px;
     display: flex;
     align-items: center;
@@ -119,5 +127,6 @@
   }
   .qty{
     font-weight: bold;
+    font-size: 13px;
   }
 }

@@ -9,7 +9,7 @@ const SelectedContext = createContext();
 const Menu = [
   {
     name: "Normal Dosa",
-    category: "Main-Item",
+    category: "MAIN ITEM",
     image_URL: "/normal-dosa.png",
     price: 15,
     qty: 0,
@@ -18,22 +18,22 @@ const Menu = [
   {
     name: "Normal-Masala",
     category: "MASALA",
-    image_URL: "https://commons.wikimedia.org/wiki/Special:FilePath/Masala%20Dosa%20with%20sambar.jpg",
+    image_URL: "/masalamix_of_masala .png",
     price: 15,
     qty: 0,
     id: uuidv4()
   },
   {
     name: "Full Set Masala Dosa",
-    category: "Main-Item",
-    image_URL: "https://commons.wikimedia.org/wiki/Special:FilePath/Masala%20dosa.jpg",
+    category: "MAIN ITEM",
+    image_URL: "/Full_Set_Masala_Dosa.png",
     price: 45,
     qty: 0,
     id: uuidv4()
   },
   {
     name: "Kutty Dosa 3pcs",
-    category: "Main-Item",
+    category: "MAIN ITEM",
     image_URL: "/kutty_dosa_3pcs.png",
     price: 45,
     qty: 0,
@@ -41,7 +41,7 @@ const Menu = [
   },
   {
     name: "Idli 3pcs",
-    category: "Main-Item",
+    category: "MAIN ITEM",
     image_URL: "/Idli_3pcs.png",
     price: 25,
     qty: 0,
@@ -49,7 +49,7 @@ const Menu = [
   },
   {
     name: "Red chutney (Tomato)",
-    category: "Side-Dish",
+    category: "SIDE DISH",
     image_URL: "/red_chutney.png",
     price: 5,
     qty: 0,
@@ -57,7 +57,7 @@ const Menu = [
   },
   {
     name: "White chutney (Coconut)",
-    category: "Side-Dish",
+    category: "SIDE DISH",
     image_URL: "/white-chutney.png",
     price: 5,
     qty: 0,
@@ -65,7 +65,7 @@ const Menu = [
   },
   {
     name: "Medu Vada 3pcs",
-    category: "Main-Item",
+    category: "MAIN ITEM",
     image_URL: "/Medu_Vada_3pcs.png",
     price: 20,
     qty: 0,
@@ -73,7 +73,7 @@ const Menu = [
   },
   {
     name: "Vegetable Sambar (Bowl)",
-    category: "Side-Dish",
+    category: "SIDE DISH",
     image_URL: "/Vegetable_Sambar.png",
     price: 10,
     qty: 0,
@@ -81,7 +81,7 @@ const Menu = [
   },
   {
     name: "Onion Dosa",
-    category: "Main-Item",
+    category: "MAIN ITEM",
     image_URL: "/Onion_Dosa.png",
     price: 22,
     qty: 0,
@@ -89,7 +89,7 @@ const Menu = [
   },
   {
     name: "Cheese Onion Dosa",
-    category: "Main-Item",
+    category: "MAIN ITEM",
     image_URL: "/Cheese_Onion_Dosa.png",
     price: 28,
     qty: 0,
@@ -97,7 +97,7 @@ const Menu = [
   },
   {
     name: "Uthappam (Veg)",
-    category: "Main-Item",
+    category: "MAIN ITEM",
     image_URL: "/Uthappam_(Veg).png",
     price: 30,
     qty: 0,
@@ -105,56 +105,56 @@ const Menu = [
   },
   {
     name: "Venn Pongal",
-    category: "Main-Item",
-    image_URL: "https://upload.wikimedia.org/wikipedia/commons/2/21/Ven_pongal_with_sambar_and_chutney.jpg",
+    category: "MAIN ITEM",
+    image_URL: "/venn_pongal.png",
     price: 25,
     qty: 0,
     id: uuidv4()
   },
   {
     name: "Filter Coffee",
-    category: "Beverage",
-    image_URL: "https://commons.wikimedia.org/wiki/Special:FilePath/Foaming%20filter%20coffee.jpg",
+    category: "BEVERAGE",
+    image_URL: "/Filter_Coffee.png",
     price: 10,
     qty: 0,
     id: uuidv4()
   },
   {
     name: "Masala Chai",
-    category: "Beverage",
-    image_URL: "https://commons.wikimedia.org/wiki/Special:FilePath/Chai%20in%20a%20Glass.jpg",
+    category: "BEVERAGE",
+    image_URL: "/Masala_Chai.png",
     price: 8,
     qty: 0,
     id: uuidv4()
   },
   {
     name: "Gulab Jamun (2pcs)",
-    category: "Dessert",
-    image_URL: "https://commons.wikimedia.org/wiki/Special:FilePath/Gulab%20jamun%20-%20Lavapies%20(Spain).JPG",
+    category: "DESSERT",
+    image_URL: "/Gulab_Jamun _2pcs).png",
     price: 12,
     qty: 0,
     id: uuidv4()
   },
   {
     name: "Rava Kesari",
-    category: "Dessert",
-    image_URL: "https://commons.wikimedia.org/wiki/Special:FilePath/Rava%20Kesari.jpg",
+    category: "DESSERT",
+    image_URL: "/Rava_Kesari.png",
     price: 18,
     qty: 0,
     id: uuidv4()
   },
   {
     name: "Mysore Pak",
-    category: "Dessert",
-    image_URL: "https://commons.wikimedia.org/wiki/Special:FilePath/Mysore%20pak.jpg",
+    category: "DESSERT",
+    image_URL: "/Mysore_Pak.png",
     price: 15,
     qty: 0,
     id: uuidv4()
   },
   {
     name: "Palada Payasam",
-    category: "Dessert",
-    image_URL: "https://commons.wikimedia.org/wiki/Special:FilePath/Palada%20Payasam.jpg",
+    category: "DESSERT",
+    image_URL: "/Palada_Payasam.png",
     price: 22,
     qty: 0,
     id: uuidv4()
