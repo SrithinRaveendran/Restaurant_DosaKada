@@ -1,19 +1,26 @@
 import './index.css'
 //import { v4 as uuidv4 } from 'uuid'
-import { useContext} from 'react';
+import { useContext, useState } from 'react';
 
 
 import Navbar from '../Navbar';
+import FrontLoadingPage from '../FrontLoadingPage'
 import SmallCard from '../SmallCard';
 
 import { SelectedContext } from "../Context/selectedContext";
 
 const Home = () => {
-     const {selected, setSelected,MenuState, setMenu,originalMenu} = useContext(SelectedContext)
-     
-     console.log("menustate",MenuState)
+  const [loadingPage, setLoadingpage] = useState(true)
 
-    const addItem = (data) => {
+  const loadingPageRemove = () => (
+    setLoadingpage(false)
+  )
+
+  const { selected, setSelected, MenuState, setMenu, originalMenu } = useContext(SelectedContext)
+
+  console.log("menustate", MenuState)
+
+  const addItem = (data) => {
     setMenu((prev) =>
       prev.map((each) =>
         data.id === each.id ? { ...each, qty: each.qty + 1 } : each
@@ -33,7 +40,7 @@ const Home = () => {
   };
 
 
-    const lessItem = (data) => {
+  const lessItem = (data) => {
     setMenu((prev) =>
       prev.map((each) =>
         data.id === each.id && each.qty > 0
@@ -54,50 +61,52 @@ const Home = () => {
   };
 
 
-    let uniquCategory = []
-    originalMenu.map(each =>
-        uniquCategory.push(each.category)
-    )
-    uniquCategory = [...new Set(uniquCategory)]
-    console.log(uniquCategory)
+  let uniquCategory = []
+  originalMenu.map(each =>
+    uniquCategory.push(each.category)
+  )
+  uniquCategory = [...new Set(uniquCategory)]
+  console.log(uniquCategory)
 
-    
-    const onChangecategory = (event) => {
-        if (event.target.value !== "ALL") {
-            const selectedcategory = originalMenu.filter(each =>
-                each.category === event.target.value
-            )
-            setMenu(selectedcategory)
-        } else {
-            setMenu(originalMenu)
-        }
+
+  const onChangecategory = (event) => {
+    if (event.target.value !== "ALL") {
+      const selectedcategory = originalMenu.filter(each =>
+        each.category === event.target.value
+      )
+      setMenu(selectedcategory)
+    } else {
+      setMenu(originalMenu)
     }
+  }
 
 
-   console.log(selected)
-    return (
+  console.log(selected)
+  return (
+    loadingPage ? <FrontLoadingPage loadingPageRemove={loadingPageRemove} /> :
+      (<div className="homemainbackground">
+        <Navbar />
+        <div className='mainPart'>
+          <div className='item-container'>
+            <select className='selectelement' onChange={onChangecategory}>
+              <option value="ALL">All</option>
+              {uniquCategory.map(each =>
+                <option value={each}>{each}</option>
+              )}
+            </select>
+            <div className='small-card-container'>
+              {MenuState.map(each =>
+                <>
+                  <SmallCard data={each} addItem={addItem} lessItem={lessItem} key={each.id} />
+                </>
 
-        <div className="homemainbackground">
-            <Navbar />
-            <div className='mainPart'>
-                <div className='item-container'>
-                    <select className='selectelement' onChange={onChangecategory}>
-                        <option value="ALL">All</option>
-                        {uniquCategory.map(each =>
-                            <option value={each}>{each}</option>
-                        )}
-                    </select>
-                    <div className='small-card-container'>
-                        {MenuState.map(each =>
-                            <>
-                                <SmallCard data={each} addItem={addItem} lessItem={lessItem} key={each.id} />
-                            </>
-
-                        )}
-                    </div>
-                </div>
+              )}
             </div>
+          </div>
         </div>
-    )
+      </div>
+      )
+  )
+
 }
 export default Home
